@@ -20,6 +20,7 @@ const getSingle = async (req, res, next) => {
     .getDb()
     .db("MarkContact")
     .collection('Contacts')
+    //.find({ _id: req.params.id });
     .find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
