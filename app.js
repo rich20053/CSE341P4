@@ -8,9 +8,9 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 8080;
 const app = express();
 
-var corsOptions = {
-  origin: "http://localhost:8081"
-};
+//var corsOptions = {
+//  origin: "http://localhost:8081"
+//};
 
 app
   //.use(cors(corsOptions))
